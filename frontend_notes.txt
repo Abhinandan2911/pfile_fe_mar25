@@ -1,0 +1,17 @@
+BOOTSTRAP JS AND REACT NOTES
+Day1 Monday 17-03-2025
+
+STEPS TO CREATE NEW GIT REPOSITARY:
+1:login to github 
+2:click on plus slightly top right corner and select new repository
+3:give name for repository 
+4:desctription(optional)
+5:public repository(Default visibility)
+6:select add readme file
+7:click create repository
+
+command to download any public repository:
+$ git clone https://github.com/Abhinandan2911/pfile_fe_mar25
+The above command copies(clones) the git repository from the server(cloud) to the local machine
+Thus, we get a folder of the repo 
+
