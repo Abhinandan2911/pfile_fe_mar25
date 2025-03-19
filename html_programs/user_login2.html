@@ -64,32 +64,31 @@
     </div>
     <script>
         function loginUser() {
-            pwd=document.getElementById('password');
-            if (document.getElementById(username) == '') {
-                alert('username cannot be empty')
-                return
+            const usernameInput = document.getElementById('username');
+            const passwordInput = document.getElementById('password');
+
+            if (usernameInput.value === '') {
+                alert('Username cannot be empty');
+                return;
             }
-            
-            if(pwd.value.length<6)
-            {
-                alert('password cannot be less then 6 charecters');
-                return
-                
+
+            if (passwordInput.value.length < 6) {
+                alert('Password cannot be less than 6 characters');
+                return;
             }
-            p=document.getElementById(password);
-            function validateFunc(p.value) {
-            let val = input.trim(); 
-            let isValid = /^[a-z0-9]+$/i.test(val);
-            console.log(isValid ? '' : alert("Invalid input."));
-}
-            
-            
-            
-            if (document.getElementById(password) == "") {
-                alert('password cannot be empty')
-                return
+
+            const passwordRegex = /^[a-zA-Z0-9]+$/;
+            if (!passwordRegex.test(passwordInput.value)) {
+                alert('Password must contain only alphanumeric characters');
+                return;
             }
-            alert('User login successful')
+
+            if (passwordInput.value === "") {
+                alert('Password cannot be empty');
+                return;
+            }
+
+            alert('User login successful');
         }
     </script>
 </body>
